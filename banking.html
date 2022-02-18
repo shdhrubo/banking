@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banking site</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-2xl text-center">Welcome!You logged in Successfully</h1>
+    <section class="mt-12">
+        <div class="grid grid-cols-3">
+            <div class="bg-blue-400 p-4 rounded w-3/4 mx-auto text-white">
+                <h3 class="text-3xl">Deposite</h3>
+                <h4 class="text-3xl">$ <span id="deposite-total">00</span></h4>
+            </div>
+            <div class="bg-yellow-400 p-4 rounded w-3/4 mx-auto text-white">
+                <h3 class="text-3xl">WithDraw</h3>
+                <h4 class="text-3xl">$ <span id="withdraw-total">00</span></h4>
+            </div>
+            <div class="bg-green-400 p-4 rounded w-3/4 mx-auto text-white">
+                <h3 class="text-3xl">Balance</h3>
+                <h4 class="text-3xl">$ <span id="balance-total">1200</span></h4>
+            </div>
+
+        </div>
+    </section>
+    <section class="mt-10">
+        <div class="grid grid-cols-2">
+
+            <div class="mx-auto w-3/4 bg-red-100 mt-3 p-5">
+                <h3 class="mb-3">Please Deposite</h3>
+                <input id="deposite-amount" type="text" class="block w-3/4 mb-4 px-2" placeholder="Deposite">
+
+                <button id="deposite-btn" class="bg-amber-400  px-2 py-1 text-white font-bold">Deposite</button>
+            </div>
+            <div class="mx-auto w-3/4 bg-blue-100 mt-3 p-5">
+                <h3 class="mb-3">Withdraw</h3>
+                <input id="withdraw-amount" type="text" class="block w-3/4 mb-4 px-2" placeholder="Withdraw">
+
+                <button id="withdraw-btn" class="bg-amber-400  px-2 py-1 text-white font-bold">WithDraw</button>
+            </div>
+        </div>
+    </section>
+    <script src="banking.js"></script>
+</body>
+
+</html>
